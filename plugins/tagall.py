@@ -23,7 +23,7 @@ async def is_admin(chat_id, user_id):
 
 
 @app.on_message(
-    filters.command(["all", "allmention", "mentionall", "tagall"], prefixes=["/", "@"])
+    filters.command(["tagall"], prefixes=["/", "@"])
 )
 async def tag_all_users(_, message):
     admin = await is_admin(message.chat.id, message.from_user.id)
@@ -274,7 +274,7 @@ async def cancelcmd(_, message):
 __MODULE__ = "Tᴀɢᴀʟʟ"
 __HELP__ = """
 
-@all ᴏʀ /all | /tagall ᴏʀ  @tagall | /mentionall ᴏʀ  @mentionall [ᴛᴇxᴛ] ᴏʀ [ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ] ᴛᴏ ᴛᴀɢ ᴀʟʟ ᴜsᴇʀ's ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ʙᴛ ʙᴏᴛ
+@tagall [ᴛᴇxᴛ] ᴏʀ [ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ] ᴛᴏ ᴛᴀɢ ᴀʟʟ ᴜsᴇʀ's ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ʙᴛ ʙᴏᴛ
 
 /admins | @admins | /report [ᴛᴇxᴛ] ᴏʀ [ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ] ᴛᴏ ᴛᴀɢ ᴀʟʟ ᴀᴅᴍɪɴ's ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ
 
