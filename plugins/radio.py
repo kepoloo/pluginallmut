@@ -35,15 +35,12 @@ from YukkiMusic.utils.logger import play_logs
 from YukkiMusic.utils.stream.stream import stream
 
 RADIO_STATION = {
-    "Air Bilaspur": "http://air.pc.cdn.bitgravity.com/air/live/pbaudio110/playlist.m3u8",
-    "Air Raipur": "http://air.pc.cdn.bitgravity.com/air/live/pbaudio118/playlist.m3u8",
-    "Capital FM": "http://media-ice.musicradio.com/CapitalMP3?.mp3&listening-from-radio-garden=1616312105154",
-    "English": "https://hls-01-regions.emgsound.ru/11_msk/playlist.m3u8",
-    "Mirchi": "http://peridot.streamguys.com:7150/Mirchi",
-    "Radio Today": "http://stream.zenolive.com/8wv4d8g4344tv",
-    "YouTube": "https://www.youtube.com/live/eu191hR_LEc?si=T-9QYD548jd0Mogp",
-    "Zee News": "https://www.youtube.com/live/TPcmrPrygDc?si=hiHBkIidgurQAd1P",
-    "Aaj Tak": "https://www.youtube.com/live/Nq2wYlWFucg?si=usY4UYiSBInKA0S1",
+    "radio1": "https://n03.radiojar.com/4ywdgup3bnzuv?rj-ttl=5&rj-tok=AAABj8uuZsUA35B3Wyo8o0tCGg",
+    "radio2": "https://c4.siar.us/proxy/radiotebet/stream",
+    "radio3": "https://s1.gntr.net/listen/radio_gentara/gentara64",
+    "radio4": "https://s1.cloudmu.id/listen/delta_fm/radio.mp3",
+    "radio5": "https://stream.radiojar.com/7csmg90fuqruv",
+    "radio6": "http://stream.denger.in:8888/dmi",
 }
 
 valid_stations = "\n".join([f"`{name}`" for name in sorted(RADIO_STATION.keys())])
